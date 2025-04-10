@@ -18,7 +18,7 @@ const loadEntries = async () => {
 
   if (data) {
     frogTable.value = data.sort((a, b) => a.id - b.id)
-    // showSuccess(toast, 'Content loaded')
+    showSuccess(toast, 'Content loaded')
     isLoading.value = false
   }
   if (error) {
