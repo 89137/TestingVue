@@ -12,6 +12,8 @@ declare module 'vue' {
     Image: typeof import('primevue/image')['default']
     MainNavbar: typeof import('./src/components/MainNavbar.vue')['default']
     MegaMenu: typeof import('primevue/megamenu')['default']
+    Nav: typeof import('./src/components/Nav.vue')['default']
+    Navbar: typeof import('./src/components/Navbar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Skeleton: typeof import('primevue/skeleton')['default']
