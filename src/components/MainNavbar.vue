@@ -5,19 +5,17 @@ import { useRoute } from 'vue-router'
 const route = useRoute()
 
 const items = ref([
-  [
-    {
-      label: 'Home',
-      route: 'Home',
-    },
-    {
-      label: 'SubPage',
-      route: 'SubPage',
-    },
-  ],
+  {
+    label: 'Home',
+    route: 'Home',
+  },
+  {
+    label: 'SubPage',
+    route: 'SubPage',
+  },
 ])
 
-const isActiveRoute = (itemRoute: string) => route.name === itemRoute
+const isActiveRoute = (itemRoute) => route.name === itemRoute
 </script>
 
 <template>
