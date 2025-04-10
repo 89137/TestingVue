@@ -14,7 +14,7 @@ onMounted(() => {
 })
 
 const loadEntries = async () => {
-  let { data, error } = await supabase.from('frogTable').select('*')
+  const { data, error } = await supabase.from('frogTable').select('*')
 
   if (data) {
     frogTable.value = data.sort((a, b) => a.id - b.id)

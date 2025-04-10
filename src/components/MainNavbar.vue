@@ -1,21 +1,23 @@
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue'
 import { useRoute } from 'vue-router'
 
 const route = useRoute()
 
 const items = ref([
-  {
-    label: 'Home',
-    route: 'Home',
-  },
-  {
-    label: 'SubPage',
-    route: 'SubPage',
-  },
+  [
+    {
+      label: 'Home',
+      route: 'Home',
+    },
+    {
+      label: 'SubPage',
+      route: 'SubPage',
+    },
+  ],
 ])
 
-const isActiveRoute = (itemRoute) => route.name === itemRoute
+const isActiveRoute = (itemRoute: string) => route.name === itemRoute
 </script>
 
 <template>

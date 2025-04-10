@@ -8,28 +8,14 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    Account: typeof import('./src/components/Account.vue')['default']
-    Auth: typeof import('./src/components/Auth.vue')['default']
-    Avatar: typeof import('primevue/avatar')['default']
-    Button: typeof import('primevue/button')['default']
     Card: typeof import('primevue/card')['default']
-    Drawer: typeof import('primevue/drawer')['default']
-    HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
-    IconCommunity: typeof import('./src/components/icons/IconCommunity.vue')['default']
-    IconDocumentation: typeof import('./src/components/icons/IconDocumentation.vue')['default']
-    IconEcosystem: typeof import('./src/components/icons/IconEcosystem.vue')['default']
-    IconSupport: typeof import('./src/components/icons/IconSupport.vue')['default']
-    IconTooling: typeof import('./src/components/icons/IconTooling.vue')['default']
     Image: typeof import('primevue/image')['default']
+    MainNavbar: typeof import('./src/components/MainNavbar.vue')['default']
     MegaMenu: typeof import('primevue/megamenu')['default']
-    Nav: typeof import('./src/components/Nav.vue')['default']
-    ProgressSpinner: typeof import('primevue/progressspinner')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Skeleton: typeof import('primevue/skeleton')['default']
-    TheWelcome: typeof import('./src/components/TheWelcome.vue')['default']
     Toast: typeof import('primevue/toast')['default']
-    WelcomeItem: typeof import('./src/components/WelcomeItem.vue')['default']
   }
   export interface ComponentCustomProperties {
     Ripple: typeof import('primevue/ripple')['default']

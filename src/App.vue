@@ -6,7 +6,7 @@ import { RouterView } from 'vue-router'
   <Toast />
   <div class="flex flex-col gap-3">
     <div>
-      <Nav />
+      <MainNavbar />
     </div>
     <div>
       <RouterView />
